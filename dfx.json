@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "SportsBookingAPI_backend": {
+      "main": "src/SportsBookingAPI_backend/main.mo",
+      "type": "motoko"
+    },
+    "SportsBookingAPI_frontend": {
+      "dependencies": [
+        "SportsBookingAPI_backend"
+      ],
+      "source": [
+        "src/SportsBookingAPI_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "SportsBookingAPI_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
